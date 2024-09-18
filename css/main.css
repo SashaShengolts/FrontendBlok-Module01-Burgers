@@ -1,0 +1,7 @@
+@import url(Reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
+body{
+font-family: "Open Sans", sans-serif;
+/* font-family: "Nunito Sans", sans-serif;  */
+}
