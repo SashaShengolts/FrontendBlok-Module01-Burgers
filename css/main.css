@@ -30,6 +30,10 @@ a {
 }
 
 .header {
+    border-bottom: 1px solid rgba(222, 222, 222, 1);
+}
+
+.header-wrapper {
     display: flex;
     align-items: center;
     gap: 196px;
@@ -55,7 +59,7 @@ a {
 .nav-link {
     color: var(--dark);
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .nav-link::after {
@@ -155,7 +159,10 @@ a {
     font-size: 79px;
     font-weight: 700;
     text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 18px;
 }
+
 .hero-description {
     max-width: 320px;
     margin: 0 auto;
@@ -164,4 +171,73 @@ a {
     line-height: 160%;
     font-family: var(--opoen-sans);
 
+}
+
+/*Banner*/
+.banner {
+    margin-top: 140px;
+}
+
+.banner-wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    width: 1180px;
+    height: 438px;
+
+    padding: 100px;
+
+    background: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner-title span {
+    display: block;
+    width: 95px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 3px;
+
+    background-color: rgba(243, 115, 53, 1);
+    border-radius: 14px;
+
+    font-family: var(--opoen-sans);
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.banner-title {
+    margin-bottom: 10px;
+    margin-top: 0;
+
+    font-family: var(--nanito-sans);
+    color: white;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 76px;
+}
+
+.banner-description {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.banner-btn {
+    width: 170px;
+    height: 58px;
+    margin: 15px 0;
+    border-radius: 5px;
+    background-color: var(--accent-light);
+
+    font-family: var(--nanito-sans);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
 }
