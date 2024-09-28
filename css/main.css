@@ -179,65 +179,67 @@ a {
 }
 
 .banner-wrapper {
-    box-sizing: border-box;
-    width: 100%;
-    width: 1180px;
-    height: 438px;
-
     padding: 100px;
 
     background: url(../img/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
 }
 
 .banner-title span {
     display: block;
-    width: 95px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-bottom: 3px;
+    padding: 5px 0;
+    margin-bottom: 4px;
+    max-width: 95px;
 
     background-color: rgba(243, 115, 53, 1);
     border-radius: 14px;
 
     font-family: var(--opoen-sans);
-    color: white;
+    font-weight: 600;
+    color: var(--light);
     font-size: 14px;
     text-align: center;
-    line-height: 18px;
+    line-height: 120%;
+    text-transform: uppercase;
 }
 
 .banner-title {
-    margin-bottom: 10px;
+    margin-bottom: 11px;
     margin-top: 0;
 
     font-family: var(--nanito-sans);
-    color: white;
+    color: var(--light);
     font-weight: 900;
     font-size: 60px;
-    line-height: 76px;
+    line-height: 126%;
+    text-transform: uppercase;
 }
 
 .banner-description {
-    margin: 0;
+    max-width: 328px;
+    margin-top: 0;
+    margin-bottom: 13px;
+
     font-size: 15px;
     font-weight: 400;
-    line-height: 24px;
-    color: rgba(255, 255, 255, 0.8);
+    line-height: 160%;
+    color: rgba(var(--light-rgb), .8);
+
 }
 
 .banner-btn {
-    width: 170px;
-    height: 58px;
-    margin: 15px 0;
+    padding: 22px 25px;
+
     border-radius: 5px;
     background-color: var(--accent-light);
+    border: none;
 
     font-family: var(--nanito-sans);
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
     text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
 }
