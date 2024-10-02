@@ -9,6 +9,7 @@
     --dark: rgba(68, 55, 55, 1.00);
     --light: rgba(255, 255, 255);
     --light-rgb: 255, 255, 255;
+    --line: #dedede
 }
 
 body {
@@ -30,7 +31,7 @@ a {
 }
 
 .header {
-    border-bottom: 1px solid rgba(222, 222, 222, 1);
+    border-bottom: 1px solid var(--line);
 }
 
 .header-wrapper {
@@ -249,44 +250,57 @@ a {
 }
 
 /*menu*/
-.menu-box {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    gap: 40px 20px;
+
+.menu {
+    margin-bottom: 140px;
 }
 
 .menu-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 100px;
-    margin-bottom: 34px;
+
 }
 
 .menu-title {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 100px;
+    margin-bottom: 34px;
 
     font-family: var(--nanito-sans);
     font-weight: 700;
     font-size: 44px;
-    line-height: 93%;
+    line-height: 127%;
+    color: var(--dark);
     text-transform: uppercase;
 }
 
 .menu-select {
-    width: 279px;
-    height: 44px;
+    padding: 13px 30px;
+
+    appearance: none;
+    flex-basis: 279px;
+    background-image: url(../img/chevron-down.svg);
+    background-size: 14px 10px;
+    background-repeat: no-repeat;
+    background-position: 89% center;
+
     border-radius: 22px;
-    border: 1px solid rgba(222, 222, 222, 1);
-    padding-left: 30px;
-    padding-right: 18px;
-    font-family: var(--opoen-sans);
-    font-weight: 400;
+    border: 1px solid var(--line);
+
     font-size: 15px;
-    line-height: 160%;
     color: var(--dark);
+}
+
+.menu-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 50px 20px;
+}
+
+.menu-item {
+    font-family: var(--nanito-sans);
+    text-align: center;
 }
 
 .menu-thumb {
@@ -294,7 +308,7 @@ a {
     height: 430px;
     position: relative;
     overflow: hidden;
-
+    margin-bottom: 20px;
 }
 
 .menu-thumb img {
@@ -309,14 +323,12 @@ a {
 }
 
 .menu-name {
-    margin-top: 27px;
-    margin-bottom: 5px;
+    margin-top: 0px;
+    margin-bottom: 10px;
 
-    text-align: center;
-    font-family: var(--nanito-sans);
     font-weight: 600;
     font-size: 30px;
-    line-height: 38px;
+    line-height: 126%;
     color: var(--dark);
 }
 
@@ -333,19 +345,26 @@ a {
 }
 
 .menu-btn {
-    width: 152px;
-    padding: 10px 30px 10px 52px;
-    background-color: var(--accent-light);
-    border-radius: 5px;
-    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     margin: 0 auto;
-    padding: 10px;
-    display: block;
+    font-size: 14px;
+    font-family: var(--nanito-sans);
+    font-weight: 700;
+    padding: 11px 36px 11px 28px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #1e2f40;
+    background-color: var(--accent-light);
+    border: none;
+    border-radius: 5px;
 
 }
 
 .btn-car {
-    margin: 0;    
+    margin: 0;
 }
 
 .btn-car::before {
@@ -353,15 +372,69 @@ a {
     width: 18px;
     height: 18px;
     margin-right: 5px;
-    background-image: url(../img/cart.svg);   
+    background-image: url(../img/cart.svg);
     display: inline-block;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-/*plus*/
+/*footer*/
 
-.plus{
-    margin-top: 100px;
-    margin-bottom: 34px;
+.footer {
+    height: 403px;
+    background-color: rgba(30, 47, 64, 1);
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item {
+    margin-top: 111px;
+}
+
+.footer-logo {
+    margin-top: 117px;
+    background-image: url(../img/logo-light-min.svg);
+    width: 63px;
+    height: 56px;
+}
+
+.footer-title {
+    font-family: var(--nanito-sans);
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 126%;
+    color: var(--light);
+    text-transform: uppercase;
+}
+
+.footer-nav {}
+
+.footer-nav a {
+    display: block;
+    margin-top: 9px;
+    color: var(--light);
+    font-size: 15px;
+}
+
+.footer-list {
+    color: var(--light);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 160%;
+}
+
+.footer-list span {
+    font-weight: 400;
+    color: var(--light-rgb), 0.9;
+}
+.footer-tel {
+    display: block;
+    font-family: var(--nanito-sans);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 126%;
+    color: var(--accent-light);
 }
