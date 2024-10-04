@@ -22,13 +22,14 @@ a {
     text-decoration: none;
 }
 
-/*Head er*/
+/*Header*/
 .container {
     width: 100%;
     max-width: 1182px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    box-sizing: border-box;
 }
 
 .header {
@@ -38,7 +39,7 @@ a {
 .header-wrapper {
     display: flex;
     align-items: center;
-    gap: 196px;
+    gap: 56px;
     padding-top: 26px;
     padding-bottom: 26px;
 }
@@ -56,6 +57,7 @@ a {
     flex-grow: 1;
     display: flex;
     gap: 46px;
+    margin-left: min(10vw, 140px);
 }
 
 .nav-link {
@@ -140,6 +142,7 @@ a {
 .button-up.hidden {
     opacity: 0;
 }
+
 .button-up.visible {
     opacity: 1;
 }
@@ -296,16 +299,17 @@ a {
 }
 
 .menu-header {
+    margin-top: 100px;
+    margin-bottom: 34px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+
 }
 
 .menu-title {
-    margin-top: 100px;
-    margin-bottom: 34px;
-
+    margin: 0;
     font-family: var(--nanito-sans);
     font-weight: 700;
     font-size: 44px;
@@ -336,6 +340,7 @@ a {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 50px 20px;
+
 }
 
 .menu-item {
@@ -393,7 +398,7 @@ a {
     font-size: 14px;
     font-family: var(--nanito-sans);
     font-weight: 700;
-    padding: 11px 36px 11px 28px;
+    padding: 11px 32px;
     text-transform: uppercase;
     text-decoration: none;
     color: #1e2f40;
@@ -403,15 +408,7 @@ a {
     transition: var(--tr);
 }
 
-.menu-btn:hover {
-    background-color: var(--accent-dark);
-}
-
-.btn-car {
-    margin: 0;
-}
-
-.btn-car::before {
+.menu-btn::before {
     content: "";
     width: 18px;
     height: 18px;
@@ -420,6 +417,20 @@ a {
     display: inline-block;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.menu-btn:hover {
+    background-color: var(--accent-dark);
+}
+
+.menu-title-additionally {
+    margin: 100px 0 34px;
+    font-family: var(--nanito-sans);
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 127%;
+    color: var(--dark);
+    text-transform: uppercase;
 }
 
 /*footer*/
@@ -612,4 +623,44 @@ a {
 
 .contact-tel:hover {
     color: var(--accent-light);
+}
+
+/*Media*/
+@media (max-width: 1080px) {
+    .header-wrapper {
+        gap: 40px;
+    }
+
+    .nav {
+        margin-left: 0;
+        gap: min(3vw, 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 150px;
+        height: 47.81px;
+    }
+
+    .header-wrapper {
+        gap: 45px;
+    }
+
+    .nav {
+        gap: 22px;
+    }
+
+    .banner {
+        margin-top: 72px;
+    }
+
+    .banner-wrapper {
+        padding: 100px 40px;
+    }
+
+    .menu-header {
+        margin-top: 80px;
+    }
+
 }
