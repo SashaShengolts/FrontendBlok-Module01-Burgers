@@ -4,8 +4,8 @@
 **Ссылки по проекту:**
 - [Макет Figma](https://sashashengolts.github.io/FrontendBlok-Module01-Burgers)
 - [Макет демо](https://sashashengolts.github.io/FrontendBlok-Module01-Burgers)
-- 
+  
 - **Технологии:**
-  - HTML
-  - CSS
-  - JavaScript
+- HTML
+- CSS
+- JavaScript
