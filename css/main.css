@@ -44,6 +44,17 @@ a {
     padding-bottom: 26px;
 }
 
+.burger-menu {
+    display: none;
+    width: 34px;
+    height: 22px;
+    background-image: url(../img/menu-btn.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+}
+
 .logo {
     display: block;
     width: 176px;
@@ -525,6 +536,7 @@ a {
     transition: var(--tr);
     text-align: right;
 }
+
 .footer-tel._mobile {
     display: none;
     font-family: var(--nanito-sans);
@@ -665,7 +677,7 @@ a {
     }
 
     .nav {
-        gap: 22px;
+        gap: 19px;
     }
 
     .banner {
@@ -679,40 +691,135 @@ a {
     .menu-header {
         margin-top: 80px;
     }
-.menu-box {   
-    grid-template-columns: repeat(2, 1fr);   
-}
-.menu-box._additionally {
-    grid-template-columns: 1fr;
 
-}
-.menu-item._additionally {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-.menu-item._additionally .menu-thumb {
-flex-basis: calc(60% - 20px);
-height: 260px;
-margin-bottom: 0;
-}
-.menu-item._additionally .menu-info {
-    flex-basis: 40%;
-}
-.footer {
-    padding-top: 62px;
-    padding-bottom: 71px;
-}
-.footer-nav {
-    margin-bottom: 20px;
+    .menu-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-box._additionally {
+        grid-template-columns: 1fr;
+
+    }
+
+    .menu-item._additionally {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .menu-item._additionally .menu-thumb {
+        flex-basis: calc(60% - 20px);
+        height: 260px;
+        margin-bottom: 0;
+    }
+
+    .menu-item._additionally .menu-info {
+        flex-basis: 40%;
+    }
+
+    .footer {
+        padding-top: 62px;
+        padding-bottom: 71px;
+    }
+
+    .footer-nav {
+        margin-bottom: 20px;
+    }
+
+    .footer-item:last-child {
+        display: none;
+    }
+
+    .footer-tel._mobile {
+        display: block;
+        text-align: left;
+    }
 }
 
-.footer-item:last-child {
-    display: none;
-}
-.footer-tel._mobile {
-    display: block;
-    text-align: left;
-}
+@media (max-width: 730px) {
+    .header-wrapper {
+        gap: 21px;
+        padding-top: 19px;
+        padding-bottom: 19px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav._modal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .logo {
+        width: 116px;
+        height: 37px;
+        flex-grow: 1;
+    }
+
+    .modal {
+        top: -400px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 500px;
+        background-color: rgba(255, 248, 220, 1);
+        padding: 40px 15px;
+        position: absolute;
+        box-sizing: border-box;
+        text-align: center;
+        transition: var(--tr);
+
+    }
+
+    .modal-close {
+        display: block;
+        width: 22px;
+        height: 22px;
+        background-image: url(../img/close1.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .hero {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+
+    .breadcrumbs {
+        font-size: 14px;
+    }
+
+    .hero-title {
+        font-size: 38px;
+    }
+
+    .hero-description {
+        font-size: 12px;
+    }
+
+    .banner-wrapper {
+        padding: 35px 17px;
+    }
+
+    .banner {
+        margin-top: 33px;
+    }
 
 }

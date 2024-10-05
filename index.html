@@ -13,6 +13,7 @@
     <header class="header" id="headerTop">
         <div class="container">
             <div class="header-wrapper">
+                <button class="burger-menu" onclick="openModal()"></button>
                 <div class="logo"></div>
                 <nav class="nav">
                     <a href="#" class="nav-link">Главная</a>
@@ -157,7 +158,7 @@
                             <div class=" menu-thumb">
                                 <img src="img/menu/03-additionally.jpg" alt="Хот-дог">
                             </div>
-                            <div  class="menu-info">
+                            <div class="menu-info">
                                 <h3 class="menu-name">Сэндвич</h3>
                                 <p class="menu-pricer">$26</p>
                                 <button type="button" class="menu-btn">
@@ -214,6 +215,15 @@
         </div>
     </footer>
     <a href="#headerTop" class="button-up hidden visible" id="btnUp">наверх</a>
+    <div class="modal" id="modal">
+        <nav class="nav _modal">
+            <a href="#" class="nav-link">Главная</a>
+            <a href="index.html" class="nav-link">Меню</a>
+            <a href="#" class="nav-link">О нас</a>
+            <a href="contact.html" class="nav-link">Контакты</a>
+        </nav>
+        <button class="modal-close" onclick="closeModal()"></button>
+    </div>
     <script src="js/script.js"></script>
 </body>
 
